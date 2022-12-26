@@ -1,0 +1,73 @@
+<div class="template">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="inner-1">
+                <button id="add-button" type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal-add-ProductOrder">Add ProductOrders</button>
+            </div>
+
+            <table class="table table-dark">
+                <thead>
+                <tr>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="tbl-body">
+                <tr>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- TODO INFO: This is "POST" / ADD HTML. -->
+    <div class="modal fade" id="modal-add-ProductOrder" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100">New ProductOrder</h3>
+                </div>
+                <div class="modal-body">
+                    <!-- <form id="inputs" class="needs-validation" novalidate=""> -->
+                    <div class="form">
+                        <div class="form-group mx-2 mb-3">
+                            <label for="Total quantity of grocery">Quantity</label>
+                            <input type="text" class="form-control" id="add-quantity" placeholder="Total quantity of grocery" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button id="btn-submit-productOrders" type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Add ProductOrder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TODO INFO: This is "PUT" / EDIT HTML. -->
+    <div class="modal fade" id="modal-edit-ProductOrder" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h3 class="modal-title w-100">Edit ProductOrder</h3>
+                </div>
+                <div class="modal-body">
+                    <!-- <form id="inputs" class="needs-validation" novalidate=""> -->
+                    <div class="form">
+                        <input id="id-edit-productOrder" type="hidden" />
+                        <div class="form-group mx-2 mb-3">
+                            <label for="Total quantity of grocery">Quantity</label>
+                            <input type="text" class="form-control" id="edit-quantity" placeholder="Total quantity of grocery" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button id="btn-delete-productOrder" type="button" class="btn btn-secondary w-80" data-bs-dismiss="modal">Delete</button>
+                    <button id="btn-submit-edited-productOrder" type="button" class="btn btn-primary w-80" data-bs-dismiss="modal">Submit ProductOrder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
